@@ -5,3 +5,37 @@
     padding: 0;
     margin: 0;
 }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbb;
+}
+
+.container .password-generator-container > input {
+    padding: 10px 30px;
+    margin: 5px 0 0 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .password-generator-container > button {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .password-generator-container #password-generator-button {
+    background-color: green;
+    color: white;
+}
+
+.container .password-generator-container #copy-option-button {
+    background-color: gray;
+    color: white;
+}
