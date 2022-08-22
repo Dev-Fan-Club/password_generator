@@ -11,7 +11,7 @@ function generatePass() {
          passField.value = password;
       }
  
-}
+};
 
 function copyPassword() {
    let copyText = document.getElementById('show-pass');
