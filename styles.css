@@ -33,5 +33,19 @@ span{
     outline: none;
     padding: 0 20px;
     
+}
 
+#btn{
+    position: relative;
+    display: inline-block;
+    background-color: lightgreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#btn2{
+    position: relative;
+    display: inline-block;
+    background-color: lightsteelblue;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
