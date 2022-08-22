@@ -5,9 +5,10 @@ const regenerateButtonElement = document.getElementById("password-generator-butt
 const copyButtonElement = document.getElementById("copy-option-button");
 const messageElement = document.querySelector(".message");
 
-const { capitalCaseAlphabets, smallCaseAlphabets, symbols } = data;
+const { capitalCaseAlphabets, smallCaseAlphabets, symbols, numbers } = data;
 const TOTAL_ALPHABETIC_CHARACTERS = 26;
 const TOTAL_SYMBOLIC_CHARACTERS = 30;
+const TOTAL_NUMBERS = 10;
 
 // Generates a password and inserts the value inside input element
 function generatePassword() {
@@ -15,6 +16,7 @@ function generatePassword() {
     let iterator = 1;
     while (iterator <= 16) {
         if (iterator % 3 === 0) password += capitalCaseAlphabets[Math.floor(Math.random() * TOTAL_ALPHABETIC_CHARACTERS)];
+        else if (iterator % 4 === 0) password += numbers[Math.floor(Math.random() * TOTAL_NUMBERS)];
         else if (iterator % 5 === 0) password += smallCaseAlphabets[Math.floor(Math.random() * TOTAL_ALPHABETIC_CHARACTERS)];
         else password += symbols[Math.floor(Math.random() * TOTAL_SYMBOLIC_CHARACTERS)];
 
