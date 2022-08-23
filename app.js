@@ -5,13 +5,15 @@ function getPassword(){
     for (let i=0; i<l; i++){
        let randomNumber = Math.floor(Math.random() * chars.length); 
        password += chars.substring( randomNumber, randomNumber + 1);
+       
    }
    document.getElementById('password').value = password;
 }
 
-/* Copying the password to the clipboard */
  
-function copyToClipboard(myText) {
-   //dont know how to do it
+function copyToClipboard() {
+   var copyText = document.getElementById("password");
+   copyText.select();
+   document.execCommand("copy");
     
 }
